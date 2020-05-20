@@ -16,8 +16,21 @@
 ## DI依赖注入
 
 #### 解释一下DI
-- DI是依赖注入，依赖注入（DI,DependencyInjection），也叫控制反转（IoC,inversion of control）是Spring框架的核心机制。Spring通过DI实现IOC。
+- DI是依赖注入（DI,DependencyInjection），也叫控制反转（IoC,inversion of control）是Spring框架的核心机制。Spring通过DI实现IOC。
 
 #### Spring中常用的注入方式
 - 常用的注入方式有三种 ： **构造器注入、setter注入、基于注解注入**。
 
+## Spring Bean
+
+#### 解释一下Spirng Bean
+- Spring Bean ：是基于用户提供的配置创建的，构成了应用程序主干的对象，由 Spring IoC 容器实例化、装配和管理。
+
+#### Bean的作用域（scope）
+- **Singleton** - 每个 Spring IoC 容器仅有一个单实例。
+- **Prototype** - 每次请求都会产生一个新的实例。
+- **Request** - 每次请求都会创建一个实例。
+- **Session** - 在一个会话周期内只有一个实例。
+- Global-session - 类似于标准的 HTTP Session 作用域，5.0版本后已不再使用。
+- **Appilcation** - 在一个 ServletContext 中只有一个实例。
+- **Websocket** - 在一个 Websocket 只有一个实例。
