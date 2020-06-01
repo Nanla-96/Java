@@ -1,7 +1,22 @@
 # Spring面试题
 
 #### 介绍一下Spring
-- spring是在企业级开发中简化开发工作而存在的，是一个轻量级的ioc和aop的容器框架。
+- spring目的是用于简化企业应用程序的开发，它使得开发者只需要关心业务需求，是一个轻量级的ioc和aop的容器框架。
+- 常见的配置方式有三种：**基于XML的配置、基于注解的配置、基于Java的配置**。
+- 主要由以下几个模块组成：<br>
+Spring Core：核心类库，提供IOC服务；<br>
+Spring Context：提供框架式的Bean访问方式，以及企业级功能（JNDI、定时任务等）；<br>
+Spring AOP：AOP服务；<br>
+Spring DAO：对JDBC的抽象，简化了数据访问异常的处理；<br>
+Spring ORM：对现有的ORM框架的支持；<br>
+Spring Web：提供了基本的面向Web的综合特性，例如多方文件上传；<br>
+Spring MVC：提供面向Web应用的Model-View-Controller实现。
+
+#### Spring 的优点？
+（1）spring属于低侵入式设计，代码的污染极低；<br>
+（2）spring的DI机制将对象之间的依赖关系交由框架处理，减低组件的耦合性；<br>
+（3）Spring提供了AOP技术，支持将一些通用任务，如安全、事务、日志、权限等进行集中式管理，从而提供更好的复用。<br>
+（4）spring对于主流的应用框架提供了集成支持。<br>
 
 ## IOC控制反转
 
